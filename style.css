@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    background: url(img/cabecote-do-motor-scaled\ 1.svg) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar todo o conteúdo à esquerda */
+    justify-content: center; /* Centralizar verticalmente */
+    height: 100%; /* Diminuir a altura do conteúdo */
+    text-align: left;
+    padding-left: 3rem; /* Espaço da borda esquerda */
+    max-width: 1500px; /* Limitar a largura do conteúdo */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    font-weight: 300;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0em;
+
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content a {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500 ;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content a:hover {
+    background-color: #cc0000;
+}
+
+.hero-content a i {
+    margin-right: 8px;
+    font-size: 1.5rem; /* Aumenta o tamanho do ícone */
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 11rem;
+}
+
+.logo img {
+    max-height: 100%;
+    width: auto;
+}
+
+.navegacao a {
+    display: inline-block;  /* Garante que o link tenha um comportamento de bloco para aplicar largura */
+    padding: 3px 20px; /* Ajuste o padding conforme necessário */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #ffffff; /* Cor inicial do texto */
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.navegacao a:hover {
+    background-color: white;
+    border-radius: 20px;
+    color: #E60D0F;
+    text-decoration: none ;
+}
+
+.logos-menor {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte */
+    font-weight: 300; /* Peso da fonte leve */
+    margin-top: 0.5rem; /* Espaçamento entre o LOGOS e o H1 */
+    color: #DEA73A;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Área Branca */
+.area_branca {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.area_branca h1 {
+    text-align: center;
+    color: #FF0000;
+    margin-bottom: 90px;
+}
+
+/* Caixas de Destaque */
+.caixas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin: 10px;
+    gap: 15px;
+}
+
+.caixa {
+    width: 350px;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.caixa img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.texto_caixa p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.texto_caixa p b {
+    font-size: 16px;
+}
+
+/* Produtos */
+.produto,.produto2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 90px;
+}
+
+.moldura,
+.moldura2 {
+    width: 350px;
+    height: 350px;
+    background: #000;
+    border-radius: 15px;
+    margin-right: 13px;
+    z-index: 2 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: -1px 10px 31px -7px rgba(0,0,0,0.75);
+}
+
+.descricao,
+.descricao2 {
+    width: 500px;
+    height: 350px;
+    background-color: #FF0000;
+    border-radius: 0 15px 15px 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    box-shadow: -1px 10px 31px -7px rgba(0,0,0,0.75);
+}
+
+.descricao h3 ,.descricao2 h3{
+    margin: 0 0 15px;
+    font-size: 26px;
+}
+
+.descricao h4 , .descricao2 h4{
+    margin: 0 0 15px;
+    font-size: 25px;
+
+}  
+
+.descricao h3::after {
+    content: '';
+    display: block;
+    width: 40px; /* Largura da linha */
+    height: 5px; /* Altura da linha */
+    background-color: #FFFFFF; /* Cor da linha */
+}
+
+.descricao2 h4::after {
+    content: '';
+    display: block;
+    width: 40px; /* Largura da linha */
+    height: 5px; /* Altura da linha */
+    background-color: #FFFFFF; /* Cor da linha */
+    margin-top: 1px; /* Espaço entre o texto e a linha */
+}
+.descricao p,
+.descricao2 p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.descricao button,
+.descricao2 button {
+    background-color: #fff;
+    color: #FF0000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-top: 25px;
+    border-radius: 8px; /* Deixa as bordas arredondadas como o botão da imagem */
+    padding: 15px 25px; /* Ajusta o tamanho interno do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+.descricao button:hover,
+.descricao2 button:hover {
+    background-color: #FFCCCC; /* Cor de fundo ao passar o mouse */
+    color: #FF0000;
+}
+
+.descricao button i,
+.descricao2 button i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 20px; /* Ajusta o tamanho do ícone */
+}
+
+.title {
+    position: relative;
+    margin-top: 30px ;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 20px; /* Ajuste o comprimento da linha */
+    height: 5px; /* Ajuste a espessura da linha */
+    background-color: #DF0408; /* Cor da linha */
+    margin: 10px auto 0; /* Espaçamento acima e abaixo */
+    border-radius: 2px; /* Bordas arredondadas, opcional */
+}
+
+/* Seção do texto */
+.text-section2 {
+    background: url(img/imagem3.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    color: white;
+    margin-top: 50px; /* Adiciona espaçamento superior */
+    
+}
+
+.text-container2 {
+    max-width: 1000px;
+    margin-right: 80px; 
+}
+
+.text-container2 h1 {
+    font-size: 2rem;
+    margin-bottom: px;
+    margin-top: -20px;
+}
+
+
+.text-container2 p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-top: 60px;
+    text-indent: 10px ;
+    letter-spacing: 1px;
+    margin-right: 500px;
+    font-weight: 200;
+}
+
+.text-container2 .values {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.text-section2 h1::after {
+    content: '';
+    display: block;
+    width: 30px; /* Largura da linha */
+    height: 5px; /* Altura da linha */
+    background-color: #FFFFFF; /* Cor da linha */
+    margin-top: 1px; /* Espaço entre o texto e a linha */
+}
+
+.text-section2 h2{
+    font-size: 30px;
+}
+
+.footer {
+    width: 1900px;
+    max-width: 2000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 180px 370px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+.qualities {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    margin-top: 30px ;
+    margin-left: -9px;
+    font-weight: 500;
+
+
+}
+
+.qualities li {
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #E7E7E7 ;
+    padding: 4px ;
+    color: #0D103B;
+}
+
+.contact-info h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.button {
+    display: flex;
+    color: white   ;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: red;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-top: 25px;
+    border-radius: 8px; /* Deixa as bordas arredondadas como o botão da imagem */
+    padding: 15px 25px; /* Ajusta o tamanho interno do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+button:hover {
+    background-color: rgb(248, 84, 84); /* Cor de fundo ao passar o mouse */
+    color: white;
+}
+
+.button i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 20px; /* Ajusta o tamanho do ícone */
+}
+
+.button a{
+    color: red;
+}
+
+.map {
+    width: 400px;
+    height: 200px;
+    margin-right: -100px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.address {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 170px;
+}
+
+.address img{
+    padding-right: 10px;
+}
+
+.details {
+    text-align: center;
+}
+
+.details strong {
+    font-weight: bold;
+}
+
+.p1 {
+    margin-right: 141px;
+    color: #4B4B4B;
+}
+
+.p2 {
+    margin-right: 182px;
+    color: #4B4B4B;
+}
+
+.p3{
+    margin-right: 85px;
+
+}
+
+.pseg{
+    white-space: nowrap;
+    
+
+}
+
+.entrecontato  h1{
+    color: #0D103B;
+    margin-bottom: -17px ;
+    text-align: left;
+
+}
+
+.details p img{
+    padding-right: 10px;
+}
+  
+/* Seção do texto */
+.text-section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background:  url('img/Group\ 1.svg') no-repeat center center/cover;
+    height: 600px;
+    color: white;
+    margin-top: 50px; /* Adiciona espaçamento superior */
+}
+
+.text-container{
+    max-width: 800px;
+    padding: 20px;
+}
+
+.text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.text-container .values {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
