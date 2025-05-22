@@ -26,9 +26,13 @@ npm install
 
 
 logos/
+
 ├── index.html
+
 ├── style.css
+
 ├── README.md
+
 └── ...
 ```
 
