@@ -22,18 +22,6 @@ git clone https://github.com/sougabrielxd/logos.git
 cd nome-do-projeto
 `
 
-
-
-## 🧪 Testes
-
-Rode os testes com:
-
-bash
-npm test
-# ou
-pytest
-
-
 ## 📁 Estrutura de Pastas
 
 
