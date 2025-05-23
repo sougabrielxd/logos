@@ -17,7 +17,7 @@ Landing Page para uma retifica de motores.
 Clone o repositório:
 
 bash
-git clone https://github.com/seu-usuario/logos.git
+git clone https://github.com/sougabrielxd/logos.git
 cd nome-do-projeto
 `
 
