@@ -4,8 +4,8 @@ Landing Page para uma retifica de motores.
 
 ## 🚀 Tecnologias Utilizadas
 
-- Html <img align="center" alt="Gab-Html" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/Html/html-original.svg">
-- CSS (<img align="center" alt="Gab-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+- Html <img align="center" alt="Gab-Html" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg">
+- CSS <img align="center" alt="Gab-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 
 ## 📸 Demonstração
 
