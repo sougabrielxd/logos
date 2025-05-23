@@ -9,7 +9,8 @@ Landing Page para uma retifica de motores.
 
 ## 📸 Demonstração
 
-![Demo][screencapture-127-0-0-1-5500-2025-05-22-15_11_17.pdf](https://github.com/user-attachments/files/20410103/screencapture-127-0-0-1-5500-2025-05-22-15_11_17.pdf)
+![screencapture-127-0-0-1-5500-index-html-2025-05-23-09_55_37](https://github.com/user-attachments/assets/084b5028-6c0a-44cf-a311-065cd395017f) 
+
 
 
 ## 🛠 Instalação
