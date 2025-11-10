@@ -99,7 +99,6 @@ body {
 }
 
 .logo {
-    max-height: 50px;
     display: flex;
     align-items: center;
     padding-left: 11rem;
