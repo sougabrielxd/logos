@@ -1269,3 +1269,8 @@ video {
     border-top-right-radius: 0px;
   }
 }
+
+/* Custom CSS for subtle top shadow on the copyright section */
+.shadow-inner-top {
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
